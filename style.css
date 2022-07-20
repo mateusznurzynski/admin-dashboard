@@ -195,6 +195,7 @@ body {
   justify-content: right;
   justify-items: center;
   align-content: center;
+  gap: 15px;
 }
 
 .project-controls > button {

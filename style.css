@@ -79,20 +79,24 @@ body {
   background-color: bisque;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 120px 1fr;
+  grid-template-rows: 160px 1fr;
 }
 
 .main > header {
   background-color: white;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  padding: 5px 20px;
+  padding: 0px 20px;
 }
 
 .header-nav,
 .header-user {
   display: grid;
   grid-template-columns: minmax(200px, 2fr) 1fr;
+}
+
+.header-user {
+  padding-bottom: 10px;
 }
 
 .search {
@@ -146,7 +150,38 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+
+.user-info {
+  padding: 5px 20px;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-picture {
+  height: 70px;
+  width: 70px;
+}
+
+.user-picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   border: 3px rgb(43, 43, 43) solid;
+  cursor: pointer;
+}
+
+.user-greeting {
+  height: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .main-content {

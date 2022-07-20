@@ -27,6 +27,7 @@ body {
   grid-auto-rows: 40px;
   padding-left: 5px;
   gap: 5px;
+  z-index: 1;
 }
 
 .aside-item {
@@ -76,7 +77,7 @@ body {
 }
 
 .main {
-  background-color: bisque;
+  background-color: rgb(230, 230, 230);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 160px 1fr;
@@ -87,6 +88,9 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   padding: 0px 20px;
+  -webkit-box-shadow: 0px -24px 19px 20px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px -24px 19px 20px rgba(66, 68, 90, 1);
+  box-shadow: 0px -24px 19px 20px rgba(66, 68, 90, 1);
 }
 
 .header-nav,
@@ -203,5 +207,5 @@ body {
 }
 
 .main-content {
-  background-color: black;
+  background-color: transparent;
 }

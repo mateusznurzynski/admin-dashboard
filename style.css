@@ -184,6 +184,24 @@ body {
   font-size: 1.5rem;
 }
 
+.project-controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: right;
+  justify-items: center;
+  align-content: center;
+}
+
+.project-controls > button {
+  color: white;
+  padding: 12px 8px;
+  width: 100px;
+  border-radius: 9999px;
+  border: none;
+  background-color: rgb(29, 108, 122);
+}
+
 .main-content {
   background-color: black;
 }

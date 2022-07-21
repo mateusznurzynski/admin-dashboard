@@ -300,6 +300,7 @@ body {
   align-content: start;
   padding: 0 10px;
   font-size: 0.9rem;
+  gap: 30px;
 }
 
 .aside-container {

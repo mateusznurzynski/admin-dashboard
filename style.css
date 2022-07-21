@@ -321,3 +321,8 @@ body {
 .aside-description {
   color: var(--description-color);
 }
+
+.trending-item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+}

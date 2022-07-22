@@ -322,7 +322,33 @@ body {
   color: var(--description-color);
 }
 
+.aside-image {
+  height: 48px;
+  width: 48px;
+}
+
+.aside-image > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
 .trending-item {
   display: grid;
-  grid-template-columns: 32px 1fr;
+  grid-template-columns: 48px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.aside-user {
+  display: grid;
+  gap: 3px;
+}
+
+.aside-username {
+  font-size: 0.95rem;
+}
+
+.user-title {
+  color: var(--description-color);
 }

@@ -15,7 +15,8 @@ html {
   --description-color: rgb(65, 65, 65);
   --primary-color: #102542;
   --primary-accent: #4f46e5;
-  --font-color: white;
+  --hover-accent: #5b53f7;
+  --font-color-light: white;
   --svg-white: brightness(0) invert(1);
 }
 
@@ -35,7 +36,7 @@ body {
   height: 100vh;
   width: var(--main-aside-width);
   background-color: var(--primary-color);
-  color: var(--font-color);
+  color: var(--font-color-light);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 60px;
@@ -48,6 +49,9 @@ body {
   grid-template-columns: 40px 1fr;
   align-items: center;
   cursor: pointer;
+}
+.aside-item:not(.logo):not(.spacer):hover {
+  background-color: var(--primary-accent);
 }
 
 .spacer {
@@ -215,13 +219,17 @@ body {
 }
 
 .project-controls > button {
-  color: var(--font-color);
+  color: var(--font-color-light);
   padding: 12px 8px;
   width: 100px;
   border-radius: 9999px;
   border: none;
   background-color: var(--primary-accent);
   font-weight: bold;
+  cursor: pointer;
+}
+.project-controls > button:hover {
+  background-color: var(--hover-accent);
 }
 
 .main-content {

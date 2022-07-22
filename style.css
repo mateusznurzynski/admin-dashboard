@@ -13,6 +13,10 @@ html {
   --main-aside-width: 250px;
   --content-aside-width: 300px;
   --description-color: rgb(65, 65, 65);
+  --primary-color: #102542;
+  --primary-accent: #4f46e5;
+  --font-color: white;
+  --svg-white: brightness(0) invert(1);
 }
 
 body {
@@ -30,7 +34,8 @@ body {
   position: fixed;
   height: 100vh;
   width: var(--main-aside-width);
-  background-color: aquamarine;
+  background-color: var(--primary-color);
+  color: var(--font-color);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 60px;
@@ -60,6 +65,7 @@ body {
 .aside-icon > img {
   height: 25px;
   width: 25px;
+  filter: var(--svg-white);
 }
 
 .aside-name {
@@ -71,6 +77,7 @@ body {
   height: 35px;
   width: 35px;
   justify-self: right;
+  filter: var(--svg-white);
 }
 
 .logo-icon > img {
@@ -208,12 +215,13 @@ body {
 }
 
 .project-controls > button {
-  color: white;
+  color: var(--font-color);
   padding: 12px 8px;
   width: 100px;
   border-radius: 9999px;
   border: none;
-  background-color: rgb(29, 108, 122);
+  background-color: var(--primary-accent);
+  font-weight: bold;
 }
 
 .main-content {
@@ -252,7 +260,7 @@ body {
 .card::before {
   content: '';
   height: 200px;
-  background-color: orange;
+  background-color: var(--primary-accent);
   width: 10px;
   position: absolute;
   left: 0;

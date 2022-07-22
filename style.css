@@ -152,6 +152,10 @@ body {
   background-color: rgb(224, 224, 224);
   font-size: 1rem;
 }
+.search-bar > input:focus-visible {
+  outline: none;
+  border: 1px gray solid;
+}
 
 .user-controls {
   display: grid;
